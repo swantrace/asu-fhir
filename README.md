@@ -27,7 +27,7 @@ Develop an application designed to facilitate the mapping between Research Studi
 
 2. How should the application be deployed to AWS? Which infrastructure as code tool should be used?
 
-   - **SST**: Serverless Stack Toolkit (SST) is a framework that makes it easy to build serverless applications on AWS. It is a good fit for the application's backend, as it allows to define and deploy the AWS resources in a safe, predictable, and repeatable way. Compared to terraform, it is more specialized for serverless applications, and it is easier to use. It is based on CDK, which makes it extensible and future-proof.
+   - **SST**: [Serverless Stack Toolkit (SST)](https://sst.dev/) is a framework that makes it easy to build serverless applications on AWS. It is a good fit for the application's backend, as it allows to define and deploy the AWS resources in a safe, predictable, and repeatable way. Compared to terraform, it is more specialized for serverless applications, and it is easier to use. It is based on CDK, which makes it extensible and future-proof.
 
 3. Are there any scenarios where long running tasks are required? If so, how should they be implemented?
 
@@ -60,28 +60,28 @@ Develop an application designed to facilitate the mapping between Research Studi
 5. What S3 bucket events requires a lambda function to be triggered?
 6. Are there any scenarios where websocket connections are required?
 7. What is the expected complexity of our data models and relationships in DynamoDB that might warrant the use of any ORM?
-   - **Dynamoosejs**: Dynamoose is a modeling tool for Amazon's DynamoDB (inspired by Mongoose). It is a good fit for the application's backend, as it allows to define the data models in a safe, predictable, and repeatable way. Compared to AWS Amplify, it is more specialized for DynamoDB, and it is easier to use. It is based on CDK, which makes it extensible and future-proof.
+   - **Dynamoosejs**: [Dynamoose](https://dynamoosejs.com/getting_started/Introduction) is a modeling tool for Amazon's DynamoDB (inspired by Mongoose). It is a good fit for the application's backend, as it allows to query and manipulate data with a simple and expressive API.
 8. What tools to use to build HTTP APIs?
-   - **tRPC**: tRPC is a TypeScript-first RPC framework. It is a good fit for the application's backend, as it allows to define the HTTP APIs in a safe, predictable, and repeatable way. Compared with GraphQL, trpc offers end-to-end type safety and better performance.
+   - **tRPC**: [tRPC](https://trpc.io/) is a TypeScript-first RPC framework. It is a good fit for the application's backend, as it allows to define the HTTP APIs in a safe, predictable, and repeatable way. Compared with GraphQL, tRPC provides runtime type safety and better performance.
 
 ### Frontend
 
 1. What frontend framework should be used?
 
-   - **Astrojs**: Astro is a new kind of frontend framework that delivers lightning-fast performance with modern tooling. It can work with components from any JavaScript framework, including React.
+   - **Astrojs**: [Astro](https://astro.build/) is a new kind of frontend framework that delivers lightning-fast performance with modern tooling. It can work with components from any JavaScript framework, including React.
 
 2. What css framework should be used?
 
-   - **Tailwind**: Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces. Compared with Bootstrap, it is more flexible and customizable.
+   - **Tailwind**: [TailwindCSS](https://tailwindcss.com/) is a utility-first CSS framework for rapidly building custom user interfaces. Compared with Bootstrap, it is more flexible and customizable.
 
 3. What form rendering library should be used? Do we have any alternatives to LHC-Forms?
 
-   - **LHC-Forms**: LHC-Forms is a JavaScript library for rendering forms based on the [Logical Observation Identifiers Names and Codes (LOINC)](https://loinc.org/) standard. It is a good fit for the application's frontend, as it allows to render forms based on the FHIR Questionnaire resource.
-   - **refero**: Refero is a JavaScript library for rendering forms based on the [FHIR Questionnaire](https://www.hl7.org/fhir/questionnaire.html) resource. It is a good fit for the application's frontend, as it allows to render forms based on the FHIR Questionnaire resource.
+   - **LHC-Forms**: [LHC-Forms](https://lhncbc.github.io/lforms/) is a JavaScript library for rendering forms based on the [Logical Observation Identifiers Names and Codes (LOINC)](https://loinc.org/) standard. It is a good fit for the application's frontend, as it allows to render forms based on the FHIR Questionnaire resource.
+   - **refero**: [Refero](https://github.com/helsenorge/refero) is a JavaScript library for rendering forms based on the [FHIR Questionnaire](https://www.hl7.org/fhir/questionnaire.html) resource. It is a good fit for the application's frontend, as it allows to render forms based on the FHIR Questionnaire resource.
 
 4. What device apis can be used to enhance the user experience? What tools should be used to access them?
 
-   - **capacitor**: Capacitor is a cross-platform app runtime that makes it easy to build web apps that run natively on iOS, Android, Electron, and the web. It is a good fit for the application's frontend, as it allows to access native device features such as camera, geolocation, and storage.
+   - **Capacitor**: [Capacitor](https://capacitorjs.com/) is a cross-platform app runtime that makes it easy to build web apps that run natively on iOS, Android, Electron, and the web. It is a good fit for the application's frontend, as it allows to access native device features such as camera, geolocation, and storage.
 
 5. Are we going to make the app support multiple languages?
 
