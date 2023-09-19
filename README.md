@@ -27,7 +27,7 @@ Develop an application designed to facilitate the mapping between Research Studi
 
 2. How should the application be deployed to AWS? Which infrastructure as code tool should be used?
 
-   - **sst**: Serverless Stack Toolkit (SST) is a framework that makes it easy to build serverless applications on AWS. It is a good fit for the application's backend, as it allows to define and deploy the AWS resources in a safe, predictable, and repeatable way. Compared to terraform, it is more specialized for serverless applications, and it is easier to use. It is based on CDK, which makes it extensible and future-proof.
+   - **SST**: Serverless Stack Toolkit (SST) is a framework that makes it easy to build serverless applications on AWS. It is a good fit for the application's backend, as it allows to define and deploy the AWS resources in a safe, predictable, and repeatable way. Compared to terraform, it is more specialized for serverless applications, and it is easier to use. It is based on CDK, which makes it extensible and future-proof.
 
 3. Are there any scenarios where long running tasks are required? If so, how should they be implemented?
 
@@ -61,6 +61,8 @@ Develop an application designed to facilitate the mapping between Research Studi
 6. Are there any scenarios where websocket connections are required?
 7. What is the expected complexity of our data models and relationships in DynamoDB that might warrant the use of any ORM?
    - **Dynamoosejs**: Dynamoose is a modeling tool for Amazon's DynamoDB (inspired by Mongoose). It is a good fit for the application's backend, as it allows to define the data models in a safe, predictable, and repeatable way. Compared to AWS Amplify, it is more specialized for DynamoDB, and it is easier to use. It is based on CDK, which makes it extensible and future-proof.
+8. What tools to use to build HTTP APIs?
+   - **tRPC**: tRPC is a TypeScript-first RPC framework. It is a good fit for the application's backend, as it allows to define the HTTP APIs in a safe, predictable, and repeatable way. Compared with GraphQL, trpc offers end-to-end type safety and better performance.
 
 ### Frontend
 
@@ -90,7 +92,7 @@ Develop an application designed to facilitate the mapping between Research Studi
 1. What authentication mechanism should be used?
 
    - **Amazon Cognito**: Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. It is a good fit for the application's backend, as it allows to authenticate users and manage user pools.
-   - **sst-auth**: SST Auth is a library that makes it easy to add authentication to your serverless application. It is a good fit for the application's backend, as it allows to authenticate users and manage user pools.
+   - **SST Auth**: SST Auth is a library that makes it easy to add authentication to your serverless application. It is a good fit for the application's backend, as it allows to authenticate users and manage user pools.
 
 2. Are there any specific identity providers(like Google or Facebook) that need to be supported with Amazon Cognito?
 
