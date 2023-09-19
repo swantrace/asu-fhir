@@ -1,5 +1,5 @@
 {
-  "name": "@notes/functions",
+  "name": "@asu-fhir/functions",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

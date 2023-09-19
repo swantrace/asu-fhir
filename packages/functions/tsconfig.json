@@ -5,7 +5,7 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "@notes/core/*": ["../core/src/*"]
+      "@asu-fhir/core/*": ["../core/src/*"]
     }
   }
 }
